@@ -5,7 +5,7 @@ import CountryCard from "@/components/CountryCard";
 import { getCountriesByRegion, getRegions } from "@/lib/api";
 
 const ITEMS_PER_PAGE = 12;
-const SITE_URL = "https://globescope.vercel.app";
+const SITE_URL = "https://globe-scope-bice.vercel.app/";
 
 const REGION_DESCRIPTIONS = {
   africa:

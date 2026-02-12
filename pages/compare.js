@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 import { getAllCountries, formatPopulation, formatArea } from "@/lib/api";
 
-const SITE_URL = "https://globescope.vercel.app";
+const SITE_URL = "https://globe-scope-bice.vercel.app/";
 
 export default function ComparePage({ countries }) {
   const [selected, setSelected] = useState(["", "", ""]);

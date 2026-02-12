@@ -1,6 +1,6 @@
 import { getAllCountries, getRegions } from "@/lib/api";
 
-const SITE_URL = "https://globescope.vercel.app";
+const SITE_URL = "https://globe-scope-bice.vercel.app/";
 
 function generateSiteMap(countries, regions) {
   const today = new Date().toISOString().split("T")[0];
