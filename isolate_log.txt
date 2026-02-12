@@ -1,0 +1,13 @@
+✅ Success with 1 fields. Added: name
+✅ Success with 2 fields. Added: capital
+✅ Success with 3 fields. Added: population
+✅ Success with 4 fields. Added: region
+✅ Success with 5 fields. Added: subregion
+✅ Success with 6 fields. Added: languages
+✅ Success with 7 fields. Added: currencies
+✅ Success with 8 fields. Added: flags
+✅ Success with 9 fields. Added: coatOfArms
+✅ Success with 10 fields. Added: borders
+❌ Failed with 11 fields. Added: timezones
+❌ Status: 400
+❌ Body: {"message":"'fields' query not specified","status":400}

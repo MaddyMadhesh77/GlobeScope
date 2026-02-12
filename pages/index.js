@@ -221,7 +221,7 @@ export default function Home({ countries, regions }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const [countries, regions] = await Promise.all([
       getAllCountries(),
@@ -232,6 +232,7 @@ export async function getServerSideProps() {
         countries,
         regions,
       },
+      revalidate: 86400, // Revalidate every 24 hours
     };
   } catch (error) {
     console.error("Failed to fetch countries:", error);
@@ -240,6 +241,7 @@ export async function getServerSideProps() {
         countries: [],
         regions: [],
       },
+      revalidate: 60, // Try again in 1 minute if failed
     };
   }
 }
